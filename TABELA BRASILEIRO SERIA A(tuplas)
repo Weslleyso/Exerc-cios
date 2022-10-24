@@ -1,0 +1,15 @@
+print('Brasileirão seria A, dia 24/10/2022')
+tabela = ('Palmeiras', 'Internacional','Flamengo','Corinthians','Fluminense','Athletico-PR','Atlético-MG','São Paulo',
+'América-MG','Fortaleza','Botafogo','Santos','Bragantino','Goiás','Coritiba','Ceará','Atlético-GO','Cuiabá','Avaí','juventude')
+
+
+pos = tabela[15]
+print(f'os primeiros 5 colocados do brasileirao A são: {tabela[0:5]}')
+print('-'*200)
+print(f'os últimos 4 colocados são:{tabela[17:21]}')
+print('-'*200)
+print(f'o {tabela[15]} 16 na tabela')
+print('-'*200)
+print(f'O g8 é {tabela[0:8]}')
+print('-'*200)
+print(f'Times em ordem Alfabética: {sorted(tabela)}')
