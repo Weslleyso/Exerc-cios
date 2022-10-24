@@ -1,0 +1,14 @@
+num = ('zero','um','dois','três','quatro','cinco','seis','sete','oito',
+ 'nove','dez','onze','doze','treze','quatorze','quinze','dezeseis','dezessete','dezoito','dezenove','vinte')
+
+
+while True:
+    n = int(input('Insira um número de 0 ate 20: '))
+
+ 
+    if n < 0 or n >20:
+        print('fim')
+        break
+    op = num[n]
+
+    print(op)
