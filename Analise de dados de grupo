@@ -1,0 +1,27 @@
+c= 0
+c18 = 0
+cf=0
+cm=0
+while True:
+    print('insira 0 para sair')
+    n = int(input('Qual sua idade: '))
+    pessoas = str(input('Qual seu sexo(M/F):').upper().strip())
+
+    c = c+1
+
+    if n >= 18:
+        c18 = c18+1
+    
+    if pessoas == 'M':
+        cm = cm+1
+    if pessoas == 'F':
+        if n <20:
+            cf = cf+1    
+
+    if n == 0:
+        break    
+
+print(f'{c-1} pessoas participaram do teste.')   
+print(f'{c18} pessoas tem mais de 18 anos, {cm} são homens.')
+print(f'{cf} são mulheres menores que 20 anos.')
+
