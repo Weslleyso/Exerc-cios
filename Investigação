@@ -1,0 +1,36 @@
+#Utilizando listas faça um programa que faça 5 perguntas para uma pessoa sobre um crime. 
+
+list = []
+a= str(input('Telefonou para a vítima: ').upper())
+b = str(input('Esteve no local do crime: ').upper())
+c = str(input('Mora perto da vítima: ').upper())
+d = str(input('Devia para a vítima: ').upper())
+e = str(input('Já trabalhou com a vítima: ').upper())
+
+if a =='S':
+    list.append(a)
+if b == 'S':
+    list.append(b)
+if c == 'S':
+    list.append(c)
+if d == 'S':
+    list.append(d)
+if e == 'S':
+    list.append(e)   
+
+print(len(list))    
+
+if len(list) == 2:
+    print('Suspeito')
+
+if len(list) == 3:
+    print('Cúmplice')
+
+if len(list) == 4:
+    print('Cúmplice')
+
+if len(list) == 5:
+    print('Assasino')
+
+if len(list) <=1:
+    print('Inocente')        
