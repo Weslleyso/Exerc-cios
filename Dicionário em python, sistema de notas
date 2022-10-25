@@ -1,0 +1,22 @@
+dict = {}
+while True:
+    op = str(input('Deseja continuar(S/N): ').upper().strip())
+    if op == 'N':
+        break
+    a=str(input('Insira o nome do aluno: '))
+    b=float(input('Insira a média do aluno: '))
+
+    dict['Aluno']=a
+    dict['Media']=b
+
+    print(f'{dict}')
+    print(f'{dict["Aluno"]}')
+    print(f'{dict["Media"]}')
+
+    if b >=7:
+        print('Aluno aprovado')
+
+    else:
+        print('Aluno reprovado')    
+
+print('fim de programa')
