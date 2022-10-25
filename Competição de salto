@@ -1,0 +1,35 @@
+#serve apenas para 1 atleta por vez
+list = []
+
+while True:
+    nome = str(input('Nome do atleta: '))
+    p= float(input('primero salto: '))
+    s=float(input('segundo salto: '))
+    t =float(input('terceiro salto: '))
+    q=float(input('quarto salto: '))
+    qu=float(input('quinto salto: '))
+    op = str(input('deseja continuar(S/N): ').upper())
+    media = (p+s+t+q+qu)/5
+    list.append(p)
+    list.append(s)
+    list.append(t)
+    list.append(q)
+    list.append(qu)
+    if op == 'N':
+        break
+    
+    
+    
+
+print(f'\nAtleta: {nome}')
+print(f'\nPrimeiro salto: {list[0]} m')
+print(f'Segundo salto: {list[1]} m')
+print(f'Terceiro salto: {list[2]} m')
+print(f'Quarto salto: {list[3]} m')
+print(f'Quinto salto: {list[4]} m')
+print('-'*60)
+print(f'Resultado final:')
+print(f'Atleta: {nome}')
+print(f'{list[0]} - {list[1]} - {list[2]} - {list[3]} - {list[4]}')
+print(f'a média dos saltos é : {media} m')
+print('fim')
