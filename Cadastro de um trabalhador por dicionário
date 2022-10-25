@@ -1,0 +1,29 @@
+dict = {}
+nome = str(input('insira o nome: '))
+ano = int(input('Ano de nascimento: '))
+idade = 2022 - ano
+dict['nome'] = nome
+dict['nascimento'] = ano
+carteira = int(input('Insira a carteira de trabalho: '))
+if carteira == 0: 
+    print('-'*60)
+    print('PERFIL DO FUNCIONÁRIO')
+    print(f'{dict}')
+    print(f'nome = {nome}')
+    print(f'idade = {idade}')
+    print(f'ctps = {carteira}')
+    
+else:    
+    contracao = int(input('Ano de contratação: '))
+    salario = float(input('Insira o salário: '))
+    aposentadoria = (contracao +30) - ano
+
+    print('-'*60)
+    print('PERFIL DO FUNCIONÁRIO')
+    print(f'{dict}')
+    print(f'nome = {nome}')
+    print(f'idade = {idade}')
+    print(f'ctps = {carteira}')
+    print(f'ano da contratação = {contracao}')
+    print(f'Salário = {salario}')
+    print(f'Aposentadoria = {aposentadoria}')
